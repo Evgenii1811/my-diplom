@@ -19,18 +19,6 @@ font-style: bold;
  font-style: normal;
 }
 
-body::after {  */
-content: ""; */
-display: block; */
-/* width: 1660px; */
-height: 3207px;
-/* background-image: url("https://raw.githubusercontent.com/netology-code/mq-diploma/master/sources/NOEMI_mq_desktop.jpg"); */
-position: absolute;
-top: 0;
-left: calc(50% - 830px);
-opacity: 0.6;
-z-index: 999;
-}
 
 /* HEADER (ШАПКА САЙТА) */
 
