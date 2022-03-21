@@ -8,6 +8,7 @@
 </head>
 <body>
 
+
 <!--HEADER (ШАПКА САЙТА)  -->
 <header class="header">
   <div class="container">
@@ -46,10 +47,12 @@
     </header>
 
 <!-- TRENDS (СЕЙЧАС В ТРЕНДЕ) -->
-<div class="content">
-   <h2 class="name" class="name_trends">Сейчас в тренде</h2>
-     <aside class="trends__wrapper">
-       <div class="picture_trends img_garden">
+<section class="trend_wrapper">
+      <div class="trends__wrapper_heading">
+       <h2 class="name_trends">Сейчас в тренде</h2>
+        </div>    
+      <div class="picture_trends">
+   <article class= "picture_trend img_garden">
          <div class="trend__body">
           <ul class="tegs__trends">
            <li class="news-teg-item">
@@ -59,22 +62,20 @@
            <a class="news-teg-link" href="#0">interior</a>
          </li>
       </ul>    
-   <h2 class="card__title">Сейчас в тренде: сад на подоконнике</h2>
+   <h3 class="card__title">Сейчас в тренде: сад на подоконнике</h3>
    </div>
-  </div>
-      
-      <div class= "picture_trends img_cheese">
+  </article>
+   <article class= "picture_trend img_cheese">
         <div class="trend__body">
           <ul class="tegs__trends">
            <li class="news-teg-item">
            <a class="news-teg-link" href="#0">food</a>
          </li>
        </ul>    
-   <h2 class="card__title">Cыры на красивых картинках из интернета: какие они на вкус?</h2>
+   <h3 class="card__title">Cыры на красивых картинках из интернета: какие они на вкус?</h3>
    </div>
-  </div>
-  
-      <div class= "picture_trends img_hiking_in_the_mountains">
+  </article>
+   <article class= "picture_trend img_hiking_in_the_mountains">
         <div class="trend__body">
           <ul class="tegs__trends">
             <li class="news-teg-item">
@@ -84,11 +85,10 @@
            <a class="news-teg-link" href="#0">travel</a>
          </li>
        </ul>    
-   <h2 class="card__title">Собираемся в первый поход в горы</h2>
+   <h3 class="card__title">Собираемся в первый поход в горы</h3>
   </div>
- </div>
-     
-     <div class="picture_trends img_lemons">
+ </article>
+   <article class="picture_trend img_lemons">
         <div class="trend__body">
           <ul class="tegs__trends">
             <li class="news-teg-item">
@@ -98,10 +98,10 @@
            <a class="news-teg-link" href="#0">health</a>
          </li>
        </ul>    
-   <h2 class="card__title">Сейчас в тренде: сколько витамина c в лимонах?</h2>
+   <h3 class="card__title">Сейчас в тренде: сколько витамина c в лимонах?</h3>
   </div>
- </div>
-</aside>
+ </article>
+ </section>
 
 
 <!--ОСНОВАНАЯ СТРАНИЦА    -->
@@ -419,9 +419,12 @@
        
 <!-- SHOP TITLE (НАШИ ИЗДЕЛИЯ)-->
         
- <h2 class="name" class= "name_shop_title">Наши изделия</h2>   
-  <aside class="shop__wrapper">
-    <article class="shop__card">    
+   <section class="shop__wrapper"> 
+     <div class="shop__wrapper_heading">
+    <h2  class= "name_shop_title">Наши изделия</h2> 
+     </div>
+     <div class="shop">
+   <article class="shop__card">    
         <div class="card__preview">
           <source
         media="(min-width: 1200px)" srcset="https://raw.githubusercontent.com/Evgenii1811/my-diplom/main/images/shop-item-desk1.jpg">
@@ -433,8 +436,8 @@
            alt="Фотография подушки">
       </div>
         <div class="shop__body">
-          <h2 class="body__title">Подушки на диван</h2>
-             <div class="body-post-content">Набор из двух подушек с модными принтами. Видео о создании <a class="product__link" href="#0">здесь</a>.</p>
+          <h3 class="body__title">Подушки на диван</h3>
+             <p class="body-post-content">Набор из двух подушек с модными принтами. Видео о создании <a class="product__link" href="#0">здесь</a>.</p>
           <div class="product__footer">
             <div class="footer__price">
               <div class="price">
@@ -446,8 +449,7 @@
          </div>
        </div>
     </article>
-   
-     <article class="shop__card">    
+   <article class="shop__card">    
         <div class="card__preview">
           <source
         media="(min-width: 1200px)" srcset="https://raw.githubusercontent.com/Evgenii1811/my-diplom/main/images/shop-item-desk2.jpg">
@@ -459,8 +461,8 @@
            alt="Кукла зайчик">
       </div>
         <div class="shop__body">
-          <h2 class="body__title">Кукла "Зайчик"</h2>
-             <div class="body-post-content">Интерьерная рукодельная кукла "Зайчик", созданию которой посвящена <a class="product__link" href="#0">весенняя серия постов</a> в блоке и несколько подкастов.</p>
+          <h3 class="body__title">Кукла "Зайчик"</h3>
+             <p class="body-post-content">Интерьерная рукодельная кукла "Зайчик", созданию которой посвящена <a class="product__link" href="#0">весенняя серия постов</a> в блоке и несколько подкастов.</p>
           <div class="product__footer">
             <div class="footer__price">
               <div class="price">
@@ -471,8 +473,7 @@
          </div>
        </div>
     </article>
-   
- <article class="shop__card">    
+   <article class="shop__card">    
         <div class="card__preview">
           <source
         media="(min-width: 1200px)" srcset="https://raw.githubusercontent.com/Evgenii1811/my-diplom/main/images/shop-item-desk3.jpg">
@@ -484,8 +485,8 @@
            alt="Шестиугольная рамка">
       </div>
         <div class="shop__body">
-          <h2 class="body__title">Шестиугольная рамка</h2>
-             <div class="body-post-content">Необычная рамка для украшения дома из видео <a class="product__link" href="#0">"как сделать рамку из подручных средств за 30 минут"</a>.</p>
+          <h3 class="body__title">Шестиугольная рамка</h3>
+             <p class="body-post-content">Необычная рамка для украшения дома из видео <a class="product__link" href="#0">"как сделать рамку из подручных средств за 30 минут"</a>.</p>
           <div class="product__footer">
             <div class="footer__price">
               <div class="price">
@@ -497,8 +498,8 @@
          </div>
        </div>
     </article>   
-   </div> 
-    
+   </section> 
+  
 <!-- FOOTER (БЛОК ВНИЗУ СТРАНИЦЫ)-->
    
   <footer class="footer">
@@ -541,7 +542,7 @@
 <!--ФОРМА ПОПАП -->
         
 <div class="popup">
- <div class="hidden">Скрытие ФИТБЕКА> 
+ <div class="hidden">Скрытие ФИТБЕКА>   
   <div class="popup__container">
     <button class="popup__close" type="button">
       <span class="button__text">Закрыть окно</span>
@@ -580,8 +581,8 @@
     </form>
   </div>  
  </div>    
-</div>   
-
+</section>   
+ 
 
 </body>
 </html>
