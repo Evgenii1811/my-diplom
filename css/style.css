@@ -50,7 +50,7 @@ font-style: bold;
 max-width: 1200px; 
 margin-left: auto;
 margin-right: auto; 
-padding: 0px 14px 120px;
+padding: 0px 50px 120px;
 } 
 
 .menu  {   
@@ -99,16 +99,17 @@ text-decoration: underline;
  color: #ffffff;
  text-align: center;
  max-width:725px;
- margin-left: 220px; 
  margin-top: 104px;
  margin-bottom: 0px;
+ margin-left: auto;
+ margin-right: auto; 
 }
 
 .page-name {
  width: 1180px;
  margin:auto; 
  margin-top: 35px; 
- padding: 27px 3px;
+ padding: 27px 23px;
  display: flex;
  justify-content: space-between;
 }
@@ -306,6 +307,7 @@ font-weight: 400;
  margin-top: 60px;  
 } 
 
+
 .name-posts {
  text-align: center;
  margin-bottom: 10x;
@@ -415,6 +417,9 @@ border: 1px solid #b59f5b;
  flex-direction: column;
 }
 
+.search-group {
+ width: 73%;
+}
 
 .subscription-field {
  box-sizing: border-box;
@@ -658,11 +663,11 @@ margin-top: 29px;
  margin-bottom: 45px;
 }
 
-.footer-wrapper{
+/* .footer-wrapper{
 width:1180px;
 margin: auto;
 padding: 0 15px;
-}
+} */
 
 
 .footer-address {
@@ -979,10 +984,12 @@ display: none;
 
  .shop__wrapper {
   max-width: 1180px; 
- }
+  }
   
  .footer-wrapper {
- max-width: 1180px;    
+ max-width: 1197px;
+ margin-left: auto;
+ margin-right:auto;
  }
 
  .news-text {
@@ -1012,23 +1019,28 @@ display: none;
 @media (min-width: 641px) and (max-width: 1199px) {
  .header {
  max-width: 1199px;
+ min-width: 1199px;
  background-image: url("https://raw.githubusercontent.com/Evgenii1811/my-diplom/main/images/banner-bg-tablet.jpg");  
  }
   
  .trend_wrapper {
- max-width: 1200px;   
+ max-width: 1200px;
+ min-width: 1199px;
  }
  
  .container { 
- max-width: 700px;
+ width: 100%;
  }
  
   .page-name {
-  max-width: 700px;
+  width: 100%;
+  min-width: 1000px;
  }
 
  .shop__wrapper {
-  max-width: 700px; 
+  width:100%;
+  min-width: 1180px;
+  margin-left: 27px;
  }
  
   .shop {
@@ -1036,10 +1048,17 @@ display: none;
   flex-wrap: wrap;
   }
   
- .footer-wrapper {
- max-width: 700px;    
- }
+.footer-wrapper {
+ min-width: 1180px;   
+ width: 100%;
+ margin-left: 20px;
+ } 
  
+/*  .footer-adress {
+  min-width: 1181px;
+ margin-left: 2%;
+  } */
+  
   .picture_trend {
   width: calc(48%);
   min-height: 250px; 
@@ -1055,12 +1074,16 @@ display: none;
   } 
   
   .main {
-  width: 55%;
+  width: 100%;
+  margin-left: 90px;
+  margin-right: 20%;
   }
   
-  .aside {
-  width: 39%;
-  margin-left: 6%;
+  
+  .aside { 
+  width: 584px; 
+  margin-left: 159px;
+  margin-right: 52px;
   }
   
   .picture {
@@ -1070,11 +1093,13 @@ display: none;
   
   .news {
   flex-wrap: wrap;
-  border-bottom: solid 2px #ededed;  
+  border-bottom: solid 2px #ededed;
+  width: 390px;
   }
  
   .news-text {
   margin-left: 0; 
+  width: 383px;
   }
   
   .news-teg {
@@ -1085,6 +1110,11 @@ display: none;
  width: calc(93%/2);
  }
 
+ .shop__card:nth-child(3n+2) { 
+ margin-right: 2%;
+ margin-left: 2%;
+ }
+  
  .shop__card:nth-child(even) {
  margin-left: 5%;
  }
@@ -1097,8 +1127,8 @@ display: none;
 font-size: 40px;
 line-height: 1.2;
 margin-top: 88px;
-margin-left: 10px;
-margin-right: 10px;
+margin-right: auto;
+margin-left: auto;
 max-width: 680px;
 }
 
@@ -1152,7 +1182,7 @@ max-width: 330px;
 
 @media (max-width: 640px) {
   .header {
-   max-width: 640px;
+   min-width: 408px;
    background-image: url("https://raw.githubusercontent.com/Evgenii1811/my-diplom/main/images/banner-mobile.jpg");
   }
   
@@ -1167,7 +1197,6 @@ max-width: 330px;
   .menu-header {
   align-self: flex-end;
   margin-bottom: 200px;
-  margin-right: 45px;  
   }
   
  .menu-list {
@@ -1193,20 +1222,37 @@ max-width: 330px;
    margin-bottom: 220px;
   }
   
-  .page-name,
-  .shop_wrapper,
-  .footer-wrapper {
-   max-width: 330px;
+  .page-name {
+   max-width: 408px;
    display: flex;
    flex-wrap: wrap;
   }
-
+  .shop_wrapper {
+   max-width: 408px;
+   display: flex;
+   flex-wrap: wrap; 
+  } 
+  
+  .footer-wrapper {
+   max-width: 323px;
+   display: flex;
+   flex-wrap: wrap; 
+   margin-left: auto;
+   margin-right:auto;
+  }
+  
+/*   .footer-adress {
+    min-width: 600px;
+    margin-left: 2%;
+  } */
+  
   .trend_wrapper {
   margin-bottom: 5px;
+  min-width: 408px;
   }
 
+  
  .main,
- .aside,
  .shop {
  width: 100%;
  }
@@ -1226,8 +1272,16 @@ max-width: 330px;
  .news {
   margin-bottom: 40px;
   border-bottom: solid 2px #ededed;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
+  width: 383px;
+  margin: auto;
   }
+  
+  .aside {
+  width: 383px;
+  margin: auto;
+  }
+  
   
   .news-picture {
   object-fit: cover;
