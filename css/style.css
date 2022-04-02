@@ -196,7 +196,7 @@ background-image: url("https://raw.githubusercontent.com/Evgenii1811/my-diplom/m
 .trend__body {
  border: solid 4px #b59f5b;
  padding: 40px 42px;
- width: 100%;
+ width: 92%;
  margin: 14px; 
  }
  
@@ -586,15 +586,15 @@ align-items: center;
 
 .shop__body {
  flex-grow: 2;
- margin-top: -65px;
+ margin-top: -66px;
  background-color: transparent; 
  opacity: 1; 
- border: 2px solid #b59f5b;
- padding: 17px;
+ border: 4px solid #b59f5b;
+ padding: 24px;
  margin-left: 3%;
  margin-right: 3%;
  min-width: 333px;
- max-width: 333px;
+ max-width: 452px;
 }
 
 .body__title {
@@ -1072,6 +1072,11 @@ display: none;
  margin-left: 1%;
  margin-right: 0%;
  }
+  
+ .card__img {
+  min-width: 100%;
+  max-width: 100%;
+  }
   
 .footer-wrapper {
  min-width: 770px; 
